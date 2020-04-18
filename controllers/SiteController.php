@@ -38,9 +38,9 @@ class SiteController extends Controller
         ];
     }
 
-    /** 
-     * {@inheritdoc}  
-     */ 
+    /**
+     * {@inheritdoc}
+     */
     public function actions()
     {
         return [
@@ -55,13 +55,13 @@ class SiteController extends Controller
     }
 
     /**
-     * Displays homepage. 
+     * Displays homepage.
      *
-     * @return string س
+     * @return string
      */
     public function actionIndex()
     {
        return $this->render('index');
     }
- 
+
 }

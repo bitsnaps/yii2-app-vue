@@ -6,11 +6,7 @@
       <p class="lead">
         You have successfully created your Yii-powered application.
       </p>
-      <p>
-        <a class="btn btn-lg btn-success" href="http://www.yiiframework.com"
-          >Get started with Yii</a
-        >
-      </p>
+      <button-component />
     </div>
     <vue-particles
       color="#dedede"
@@ -33,8 +29,16 @@
   </div>
 </template>
 <script>
-export default {};
+import Vue from 'vue'
+import ButtonComponent from './ButtonComponent.vue'
+
+export default {
+    components:{
+        ButtonComponent
+    }
+};
 </script>
+
 <style>
 .jumbotron {
   position: absolute;

@@ -2,13 +2,11 @@
 
 /* @var $this yii\web\View */
 
-$this->title = 'My Yii Application';
+$this->title = 'Yii2 with Vue';
 ?>
 <div class="site-index">
 
-  
     <jumbotron-component></jumbotron-component>
-    
 
     <div class="body-content">
 

@@ -38,7 +38,23 @@ AppAsset::register($this);
                     'class' => 'navbar-inverse navbar-fixed-top',
                 ],
             ]);
-            echo Nav::widget([
+            ?>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+              <ul class="nav navbar-nav navbar-right">
+                <li><router-link to="/">Home</router-link></li>
+                <li><router-link to="/about">About</router-link></li>
+                <li><router-link to="/">Contact</router-link></li>
+                <li role="separator" class="divider"></li>
+                <li><router-link to="/">Login</router-link></li>
+                <router-view></router-view>
+              </ul>
+
+            </div><!-- /.navbar-collapse -->
+<?php
+            /*echo Nav::widget([
                 'options' => ['class' => 'navbar-nav navbar-right'],
                 'items' => [
                     ['label' => 'Home', 'url' => ['/site/index']],
@@ -53,7 +69,7 @@ AppAsset::register($this);
                         . Html::endForm()
                         . '</li>')
                 ],
-            ]);
+            ]);*/
             NavBar::end();
             ?>
 

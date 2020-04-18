@@ -12,13 +12,14 @@ require('./plugins/vue-particles');
  */
 import JumbotronComponent from './components/JumbotronComponent.vue'
 import ButtonComponent from './components/ButtonComponent.vue'
-
+import router from './router'
 
 // const files = require.context('./plugin', true, /\.vue$/i)
 // files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default))
 
 const app = new Vue({
     el: '#app',
+    router,
     components:{
         JumbotronComponent,
         ButtonComponent
